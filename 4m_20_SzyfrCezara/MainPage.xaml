@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4m_20_SzyfrCezara.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            >
+            <Label
+                Text="Cezar"
+                FontSize="20"
+                />
+            <HorizontalStackLayout>
+                <Label Text="jawny" />
+                <Entry
+                    x:Name="entJawny1"
+                    WidthRequest="500" FontSize="32"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="przesunięcie" />
+                <Entry
+                    x:Name="entPrzesuniecie1"
+                    Text="3"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="szyfr: " />
+                <Label x:Name="lblZaszyfr1" FontSize="32"/>
+            </HorizontalStackLayout>
+            <Button
+                Text="zaszyfruj"
+                Clicked="btnZaszyfrujClicked"
+                />
+
+            <HorizontalStackLayout>
+                <Label Text="zaszyfrowany:" />
+                <Entry x:Name="entZaszyfrowany2" FontSize="32" 
+                       WidthRequest="500" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="przesunięcie" />
+                <Entry
+                    x:Name="entPrzesuniecie2"
+                    Text="3"
+                    />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="jawny: " />
+                <Label x:Name="lblJawny2" FontSize="32"/>
+            </HorizontalStackLayout>
+            <Button
+                Text="odszyfruj"
+                Clicked="btnOdszyfrujClicked"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
